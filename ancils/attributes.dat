@@ -1,0 +1,22 @@
+title			HadEX3
+institution		Met Office Hadley Centre, Exeter, UK
+source			HadEX3 data product
+references		Dunn, Alexander et al. 2020, Journal of Geophysical Research - Atmospheres
+creator_name		Robert Dunn
+creator_url		www.metoffice.gov.uk
+creator_email		robert.dunn@metoffice.gov.uk
+keywords		extremes indices, gridded, temperature, precipitation, ETCCDI
+summary			Quality-controlled, sub-daily, station dataset containing temperature, dewpoint, pressure, wind speed & direction and cloud cover.
+hadex3_version		3.0.0
+licence			HadEX3 is distributed under the Open Government Licence: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/.  The data are available for use with attribution to the data providers. Please cite Dunn et al (2020) and state the version used. This product may contain data which are governed by WMO Policy following WMO Resolution 40 Annex 1 alongside additional data that may have restrictions placed on their commercial use by the data owners. Any redistribution of this product should be accompanied by a similar statement of usage policy.
+processing_level	Daily TX, TN and P observations, converted to ETCCDI indices, and then gridded
+time_coverage_start	1901-01-01T00:00Z
+time_coverage_end	2019-01-01T00:00Z
+geospatial_lat_min	-90
+geospatial_lat_max	90
+geospatial_lat_units	degrees
+geospatial_lon_min	0
+geospatial_lon_max	360
+geospatial_lon_units	degrees
+cdm_data_type		grid
+acknowledgement		RJHD was supported by Met Office Hadley Centre Climate Programme funded by BEIS and Defra

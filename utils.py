@@ -1198,7 +1198,7 @@ http://stackoverflow.com/questions/558216/function-to-determine-if-two-numbers-a
 
 #******************************************************************************************
 #******************************************************************************************
-CONFIG_FILE = "~hadobs/hadex/input_files_v3/configuration.txt"
+CONFIG_FILE = "ancils/configuration.txt"
 
 if not os.path.exists(os.path.expanduser(CONFIG_FILE)):
     print("Configuration file missing - {}".format(os.path.expanduser(CONFIG_FILE)))
