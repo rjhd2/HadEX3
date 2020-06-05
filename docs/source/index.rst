@@ -10,22 +10,17 @@ Introduction
 ------------
 
 This set of code is generates a set of files and plots for the HadEX3
-dataset, created in preparation for the IPCC AR6 report.  A wide range
-of submitted data are ingested, reformatted, processed into ETCCDI
+dataset.  A wide range of submitted data are ingested, reformatted, processed into ETCCDI
 indices and then gridded.
 
-Running EEA
+Running HadEX3
 -----------
 
 1. Check out the code
-   The code is stored in my own svn repository [one of those legacy
-   things].  This is at file:///home/h05/rdunn/svn/hadex3/trunk
 
 2. Edit configuration files
    The configuation and other source files for this code are stored
-   in::
-
-   ~hadobs/hadex/input_files_v3
+   in ancils/::
 
    1. configuration.txt
       This file contains the main settings to run the code.  Adjust
@@ -33,8 +28,9 @@ Running EEA
       other settings should be able to be left alone::
 
         [Paths]
-        root=/scratch/rdunn/hadex3/
-        ancillaries=~hadobs/hadex/input_files_v3/
+        root=BASELINE_RUNDIR
+        ancillaries=ANCIL_FILES_DIR
+        input_location=INDATA_STORAGE_DIR
         [Files]
         parameters=parameters.json
         pubA=Pub9volA160415x.flatfile
@@ -48,7 +44,7 @@ Running EEA
         climatology_completeness=0.85
         [DLS]
         default=200
-        maximum_dls=3000
+        maximum_dls=2000
         fix_zero=True
         [Grid]
         deltalon=1.875
@@ -91,7 +87,17 @@ Running EEA
         [GHCND]
         hcn=True
         gsn=True
-
+        [PLOTS]
+        trend_start=1950
+        trend_end=2018
+        trend_completeness=0.66
+        trend_final_year=2009
+        watermark=False
+        fontsize=14
+        hadex_loc=HADEX_DIR
+        hadex2_loc=HADEX2_DIR
+        ghcndex_loc=GHCNDEX_DIR
+        era5_loc=ERA5_DIR
       
    2. parameters.json
       This contains the list of the latitude bands in one step and the
@@ -109,22 +115,6 @@ Running EEA
    5. land_mask_15min.msk
       A land-sea mask at 15min (0.25 degree) resolution used to build
       one for the grid size used.
-
-Using the Rose Suite
---------------------
-
-It will be easiest to use the Rose suite mi-au039 to run all this code
-for you.  However, this does depend on having write access to the svn
-repository where the code is kept, as some of the settings are hard
-coded (at the moment!).
-
-1. Check out the Rose suite *mi-au039*
-2. Update the input files as outlined above
-3. Run the following from inside your roses/mi-au039 directory::
-   rose suite-run 
-
-Should take about 48-72 hours.  The multiple indices lends to a
-parallised system, and so I do not recommend running this by hand.
 
 
 Scripts
