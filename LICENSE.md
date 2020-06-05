@@ -4,7 +4,6 @@ The licence terms are available at the following link but are reproduced in full
 http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 
 Open Government License
-^^^^^^^^^^^^^^^^^^^^^^^
 
 You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
 Using Information under this licence
