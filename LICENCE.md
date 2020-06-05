@@ -1,10 +1,9 @@
-The HadEX3 gridded dataset and also these scripts are available under the Open Government .
+The HadEX3 gridded dataset and also these scripts are available under the Open Government License.
 The licence terms are available at the following link but are reproduced in full below:
 
 http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 
 Open Government Licence
-^^^^^^^^^^^^^^^^^^^^^^^
 
 You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
 Using Information under this licence
